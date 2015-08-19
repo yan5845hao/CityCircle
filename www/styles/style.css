@@ -1,0 +1,42 @@
+.bar.bar-positive{
+    background-color:#33cd5f;
+}
+.bar.bar-positive .title{
+    color:#fff;
+    font-weight: bold;
+}
+.bar-positive .button.button-clear{
+    font-size: 14px;
+}
+.item{
+    margin:10px;
+    border:1px solid #ffffff;
+    border-radius: 3px;
+    padding:0;
+    -moz-box-shadow:1px 1px 5px #969696;/*firefox*/
+    -webkit-box-shadow:1px 1px 5px #969696;/*webkit*/
+    box-shadow:1px 1px 5px #969696;/*opera或ie9*/
+}
+
+.item > .content{
+    padding: 5px;
+    font-size: 14px;
+}
+
+.item > .content .content{
+    color: #aaaaaa;
+    font-size: 12px;
+}
+
+.item .property{
+    background-color:#fafafa;
+}
+
+.table-cell{
+    width:20%;
+    display:table-cell;
+    padding:0 5px;
+    text-align: center;
+    font-size: 6px;
+    color:#aaaaaa;
+}

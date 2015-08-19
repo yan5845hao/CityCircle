@@ -1,0 +1,28 @@
+<ion-header-bar class="nav-title-slide-ios7 bar-positive">
+    <h1 class="title">同城圈</h1>
+    <button class="button button-clear ">扬州</button>
+</ion-header-bar>
+<ion-content style="background: #f5f5f5;">
+    <ion-list>
+        <ion-item ng-repeat="result in results">
+            <div class="content">
+                <div ng-bind="result.title"></div>
+                <div class="content" ng-bind="result.content"></div>
+            </div>
+            <div class="property">
+                <ul class="table-row">
+                    <li class="table-cell" ng-bind="result.type"></li>
+                    <li class="table-cell" ng-if="result.username" ng-bind="result.username"></li>
+                    <li class="table-cell"></li>
+                    <li class="table-cell" ng-bind="result.updatedAt"></li>
+                </ul>
+            </div>
+        </ion-item>
+
+    </ion-list>
+    <ion-infinite-scroll
+            ng-if="moreDataCanBeLoaded"
+            distance="10%"
+            icon="ion-loading-c"
+            on-infinite="loadMoreData()"></ion-infinite-scroll>
+</ion-content>
