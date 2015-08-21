@@ -8,7 +8,10 @@
 .bar-positive .button.button-clear{
     font-size: 14px;
 }
-.item{
+.main-content{
+    background: #f5f5f5;
+}
+.main-content .item{
     margin:10px;
     border:1px solid #ffffff;
     border-radius: 3px;
@@ -18,17 +21,17 @@
     box-shadow:1px 1px 5px #969696;/*opera或ie9*/
 }
 
-.item > .content{
+.main-content .item > .content{
     padding: 5px;
-    font-size: 14px;
+    font-size: 10px;
 }
 
-.item > .content .content{
+.main-content .item > .content .content{
     color: #aaaaaa;
     font-size: 12px;
 }
 
-.item .property{
+.main-content .item .property{
     background-color:#fafafa;
 }
 
@@ -39,4 +42,83 @@
     text-align: center;
     font-size: 6px;
     color:#aaaaaa;
+}
+
+.userLogo{
+    margin:0 5px 5px 0;
+    width: 25px;
+    height:25px;
+    border-radius: 25px;
+    vertical-align: middle;
+}
+
+.detail-content .item{
+    overflow: auto;
+    text-overflow: ellipsis;
+    white-space: inherit;
+}
+
+.detail-content .item p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: inherit;
+    line-height: 25px;
+    font-size: 14px;
+    font-family: 微软雅黑;
+}
+
+.button.button-clear.icon-right.font-20:before{
+    font-size: 20px;
+}
+
+.button.button-clear.font-24:before{
+    font-size: 24px;
+}
+.detail-content .scroll{
+    padding-bottom: 44px;
+}
+.main-i-content .scroll{
+    padding: 0px;
+}
+.icon-right:before {
+    float: right;
+    padding-right: 0;
+    padding-left: 0.2em;
+}
+.list-content{
+    margin:0 10px; padding:0;
+}
+
+.list-content .item{
+    border:0;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    color: #444;
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin: 0;
+    padding: 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.platform-ios .popover-arrow {
+     position: absolute;
+     display: block;
+     top: 0px;
+     width: 0px;
+     height: 0px;
+     overflow: hidden;
+}
+
+.platform-ios .popover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
+    border-radius: 3px;
+}
+
+.platform-ios .popover .scroll-content{
+    border-radius: 0;
+    padding: 0;
+    margin: 3px;
 }

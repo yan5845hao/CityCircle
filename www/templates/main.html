@@ -1,28 +1,219 @@
-<ion-header-bar class="nav-title-slide-ios7 bar-positive">
-    <h1 class="title">同城圈</h1>
-    <button class="button button-clear ">扬州</button>
-</ion-header-bar>
-<ion-content style="background: #f5f5f5;">
-    <ion-list>
-        <ion-item ng-repeat="result in results">
-            <div class="content">
-                <div ng-bind="result.title"></div>
-                <div class="content" ng-bind="result.content"></div>
-            </div>
-            <div class="property">
-                <ul class="table-row">
-                    <li class="table-cell" ng-bind="result.type"></li>
-                    <li class="table-cell" ng-if="result.username" ng-bind="result.username"></li>
-                    <li class="table-cell"></li>
-                    <li class="table-cell" ng-bind="result.updatedAt"></li>
-                </ul>
-            </div>
-        </ion-item>
+<ion-view>
+    <ion-header-bar align-title="center" class="nav-title-slide-ios7 bar-positive">
+        <button class="button button-clear icon-right ion-angle-down font-20" style="position: absolute; left:20px;">扬州市 </button>
+        <button class="button button-clear ion-th-list font-24"  ng-click="openPopover($event)" style="position: absolute; top:10px;"></button>
+    </ion-header-bar>
+    <ion-content class="main-i-content detail-content" overflow-scroll="false" style="background: #f5f5f5;">
+        <ion-list>
+            <ion-item ng-click="show()">
+                <div class="property" style="margin:10px 0;">
+                    <ul class="table-row">
+                        <li class="table-cell" style="text-align: left; width:30px;">
+                            <img src="images/default.jpg" class="userLogo"/>
+                        </li>
+                        <li class="table-cell" style="text-align: left;width:50%;">
+                            <div style="font-size: 10px;">YH</div>
+                        </li>
+                        <li class="table-cell"style="width:40%;">
+                            <div style="font-size: 10px; text-align: right;">08/19</div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p style="margin: 10px 0;">
+                        阿里看见对方拉丁方立即按快了点附近垃圾了空间看了就立刻就看见了看见了看见了看见就急急急将就看就看了就看了交流交流空间了空间阿凡达的发的是发的发生的发生的发达的方
+                    </p>
+                </div>
+                <div>
+                    <div style="margin:2px;float:left; width:65px;height:65px;border:1px solid #ccc;">
+                        <img src="images/2015081216425685.jpg" style="width:100%; height:100%;"/>
+                    </div>
+                    <div style="margin:2px;float:left; width:65px;height:65px;border:1px solid #ccc;">
+                        <img src="images/2015081216425685.jpg" style="width:100%; height:100%;"/>
+                    </div>
+                    <div style="margin:2px;float:left; width:65px;height:65px;border:1px solid #ccc;">
+                        <img src="images/2015081216425685.jpg" style="width:100%; height:100%;"/>
+                    </div>
+                    <div style="margin:2px;float:left; width:65px;height:65px;border:1px solid #ccc;">
+                        <img src="images/2015081216425685.jpg" style="width:100%; height:100%;"/>
+                    </div>
+                    <div style="margin:2px;float:left; width:65px;height:65px;border:1px solid #ccc;">
+                        <img src="images/2015081216425685.jpg" style="width:100%; height:100%;"/>
+                    </div>
+                    <div style="margin:2px;float:left; width:65px;height:65px;border:1px solid #ccc;">
+                        <img src="images/2015081216425685.jpg" style="width:100%; height:100%;"/>
+                    </div>
+                    <div style="margin:2px;float:left; width:65px;height:65px;border:1px solid #ccc;">
+                        <img src="images/2015081216425685.jpg" style="width:100%; height:100%;"/>
+                    </div>
+                    <div style="margin:2px;float:left; width:65px;height:65px;border:1px solid #ccc;">
+                        <img src="images/2015081216425685.jpg" style="width:100%; height:100%;"/>
+                    </div>
+                    <div style="margin:2px;float:left; width:65px;height:65px;border:1px solid #ccc;">
+                        <img src="images/2015081216425685.jpg" style="width:100%; height:100%;"/>
+                    </div>
+                    <div style="margin:2px;float:left; width:65px;height:65px;border:1px solid #ccc;">
+                        <img src="images/2015081216425685.jpg" style="width:100%; height:100%;"/>
+                    </div>
+                    <div style="margin:2px;float:left; width:65px;height:65px;border:1px solid #ccc;">
+                        <img src="images/2015081216425685.jpg" style="width:100%; height:100%;"/>
+                    </div>
+                    <div style="margin:2px;float:left; width:65px;height:65px;border:1px solid #ccc;">
+                        <img src="images/2015081216425685.jpg" style="width:100%; height:100%;"/>
+                    </div>
+                </div>
+                <div class="property" style="text-align: right; ">
+                    <ul class="table-row" style="width:40%;display: inline-table;">
+                        <li class="table-cell"><a class="ion-up"> 赞</a></li>
+                        <li class="table-cell"><a class="ion-commenting-o"> 回复</a></li>
+                    </ul>
+                </div>
+            </ion-item>
+            <ion-item>
+                <div class="property" style="margin:10px 0;">
+                    <ul class="table-row">
+                        <li class="table-cell" style="text-align: left; width:30px;">
+                            <img src="images/default.jpg" class="userLogo"/>
+                        </li>
+                        <li class="table-cell" style="text-align: left;width:50%;">
+                            <div style="font-size: 10px;">YH</div>
+                        </li>
+                        <li class="table-cell"style="width:40%;">
+                            <div style="font-size: 10px; text-align: right;">08/19</div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p style="margin: 10px 0;">
+                        阿里看见对方拉丁方立即按快了点附近垃圾了空间看了就立刻就看见了看见了看见了看见就急急急将就看就看了就看了交流交流空间了空间阿凡达的发的是发的发生的发生的发达的方
+                    </p>
+                </div>
+                <div>
+                    <div style="margin:2px;float:left; width:65px;height:65px;border:1px solid #ccc;">
+                        <img src="images/2015081216425685.jpg" style="width:100%; height:100%;"/>
+                    </div>
+                    <div style="margin:2px;float:left; width:65px;height:65px;border:1px solid #ccc;">
+                        <img src="images/2015081216425685.jpg" style="width:100%; height:100%;"/>
+                    </div>
+                    <div style="margin:2px;float:left; width:65px;height:65px;border:1px solid #ccc;">
+                        <img src="images/2015081216425685.jpg" style="width:100%; height:100%;"/>
+                    </div>
+                    <div style="margin:2px;float:left; width:65px;height:65px;border:1px solid #ccc;">
+                        <img src="images/2015081216425685.jpg" style="width:100%; height:100%;"/>
+                    </div>
+                    <div style="margin:2px;float:left; width:65px;height:65px;border:1px solid #ccc;">
+                        <img src="images/2015081216425685.jpg" style="width:100%; height:100%;"/>
+                    </div>
+                    <div style="margin:2px;float:left; width:65px;height:65px;border:1px solid #ccc;">
+                        <img src="images/2015081216425685.jpg" style="width:100%; height:100%;"/>
+                    </div>
+                    <div style="margin:2px;float:left; width:65px;height:65px;border:1px solid #ccc;">
+                        <img src="images/2015081216425685.jpg" style="width:100%; height:100%;"/>
+                    </div>
+                </div>
+                <div class="property" style="text-align: right; ">
+                    <ul class="table-row" style="width:40%;display: inline-table;">
+                        <li class="table-cell"><a class="ion-up"> 赞</a></li>
+                        <li class="table-cell"><a class="ion-commenting-o"> 回复</a></li>
+                    </ul>
+                </div>
+            </ion-item>
+            <ion-item>
+                <div class="property" style="margin: 10px 0;">
+                    <ul class="table-row">
+                        <li class="table-cell" style="text-align: left; width:30px;">
+                            <img src="images/default.jpg" class="userLogo"/>
+                        </li>
+                        <li class="table-cell" style="text-align: left;width:50%;">
+                            <div style="font-size: 10px;">YH</div>
+                        </li>
+                        <li class="table-cell"style="width:40%;">
+                            <div style="font-size: 10px; text-align: right;">08/19</div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p style="margin: 10px 0;">
+                        阿里看见对方拉丁方立即按快了点附近垃圾了空间看了就立刻就看见了看见了看见了看见就急急急将就看就看了就看了交流交流空间了空间阿凡达的发的是发的发生的发生的发达的方
+                    </p>
+                </div>
+                <div>
+                    <div style="margin:2px;float:left; width:65px;height:65px;border:1px solid #ccc;">
+                        <img src="images/2015081216425685.jpg" style="width:100%; height:100%;"/>
+                    </div>
+                    <div style="margin:2px;float:left; width:65px;height:65px;border:1px solid #ccc;">
+                        <img src="images/2015081216425685.jpg" style="width:100%; height:100%;"/>
+                    </div>
+                    <div style="margin:2px;float:left; width:65px;height:65px;border:1px solid #ccc;">
+                        <img src="images/2015081216425685.jpg" style="width:100%; height:100%;"/>
+                    </div>
+                </div>
+                <div class="property" style="text-align: right; ">
+                    <ul class="table-row" style="width:40%;display: inline-table;">
+                        <li class="table-cell"><a class="ion-up"> 赞</a></li>
+                        <li class="table-cell"><a class="ion-commenting-o"> 回复</a></li>
+                    </ul>
+                </div>
+            </ion-item>
+        </ion-list>
+        <!--<ion-infinite-scroll-->
+        <!--ng-if="!moreDataCanBeLoaded"-->
+        <!--refreshing-icon="ion-loading-c"-->
+        <!--on-infinite="loadMore()"-->
+        <!--distance="10%">-->
+        <!--</ion-infinite-scroll>-->
+    </ion-content>
+    <!--<ion-content>-->
+        <!--<ion-list>-->
+            <!--<ion-item ng-repeat="result in results" ng-click="show()">-->
+                <!--<div class="content item-avatar">-->
+                    <!--<img src="images/default.jpg">-->
+                    <!--<div style="margin: 25px 0 0 60px;">-->
+                        <!--<h2 style="font-weight: bold;" ng-bind="result.username"></h2>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div>-->
+                    <!--<p style="margin: 10px 0;">-->
+                        <!--阿里看见对方拉丁方立即按快了点附近垃圾了空间看了就立刻就看见了看见了看见了看见就急急急将就看就看了就看了交流交流空间了空间阿凡达的发的是发的发生的发生的发达的方-->
+                    <!--</p>-->
+                    <!--<img src="images/2015081216425685.jpg" style="width:100%;"/>-->
+                    <!--<img src="images/s2015081216423527.jpg" style="width:100%;"/>-->
+                <!--</div>-->
+                <!--<div class="property">-->
+                    <!--<ul class="table-row">-->
+                        <!--<li class="table-cell" ng-bind="result.type"></li>-->
+                        <!--<li class="table-cell" ng-if="result.city" ng-bind="result.city"></li>-->
+                        <!--<li class="table-cell"></li>-->
+                        <!--<li class="table-cell" ng-bind="result.updatedAt"></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</ion-item>-->
 
-    </ion-list>
-    <ion-infinite-scroll
-            ng-if="moreDataCanBeLoaded"
-            distance="10%"
-            icon="ion-loading-c"
-            on-infinite="loadMoreData()"></ion-infinite-scroll>
-</ion-content>
+        <!--</ion-list>-->
+        <!--<ion-infinite-scroll-->
+                <!--ng-if="!moreDataCanBeLoaded"-->
+                <!--refreshing-icon="ion-loading-c"-->
+                <!--on-infinite="loadMore()"-->
+                <!--distance="10%">-->
+        <!--</ion-infinite-scroll>-->
+    <!--</ion-content>-->
+</ion-view>
+
+<script id="ez-popover.html" type="text/ng-template">
+    <ion-popover-view class=" light main-popover">
+        <ion-content>
+            <ion-item ng-click="edit()">
+                <i class="icon ion-edit"></i>&nbsp;&nbsp;发贴
+            </ion-item>
+            <ion-item ng-click="showList()">
+                <i class="icon ion-comment-o"></i>&nbsp;&nbsp;圈子
+            </ion-item>
+            <ion-item>
+                <i class="icon ion-comments-o"></i>&nbsp;&nbsp;我的话题
+            </ion-item>
+            <ion-item>
+                <i class="icon ion-commenting-o"></i>&nbsp;&nbsp;我的回复
+            </ion-item>
+        </ion-content>
+    </ion-popover-view>
+</script>
